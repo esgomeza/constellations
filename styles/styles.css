@@ -1,1 +1,247 @@
-/* aca iran todos los estilos */
+/* RESET Y CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: radial-gradient(circle at top left, #0b0c19, #050510);
+    font-family: "Inter", sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+/* ----- HEADER ----- */
+.main-header {
+    text-align: center;
+    margin-top: 4em;
+    padding: 0 2em;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0.3em;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.purple {
+    
+    background: radial-gradient(circle at left, #FFFFFF, #8467dc, #bf31b8);
+    -webkit-background-clip: text; /* Para navegadores basados en WebKit */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el fondo */
+    background-clip: text; /* Estándar */
+    color: transparent; /* Asegura compatibilidad */
+}
+
+.subtitle {
+    opacity: 0.8;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* ----- CONTENEDOR GENERAL ----- */
+.outer-box {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3em;
+    border: 1px solid #1a1a2e;
+    border-radius: 1.5em;
+    margin-top: 2em;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+}
+
+/* ----- DOS COLUMNAS ----- */
+.contact-wrapper {
+    display: flex;
+    gap: 3em;
+    align-items: stretch;
+}
+
+/* ----- IZQUIERDA (FORMULARIO) ----- */
+.left-box {
+    flex: 1.2;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 2.5em;
+    border-radius: 1em;
+    border: 1px solid rgba(26, 3, 3, 0.367);
+}
+
+.left-box h2 {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+.desc {
+    opacity: 0.8;
+    margin-bottom: 2.5em;
+    line-height: 1.6;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* ----- FORMULARIO ----- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.double {
+    display: flex;
+    gap: 1em;
+}
+
+.double input {
+    flex: 1;
+}
+
+input, textarea {
+    background: #121422;
+    border: 1px solid #292b3a;
+    padding: 1.2em;
+    border-radius: 0.8em;
+    color: white;
+    font-size: 1em;
+    font-family: "Inter", sans-serif;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #8052ff;
+    box-shadow: 0 0 0 2px rgba(128, 82, 255, 0.2);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #8b8b9e;
+}
+
+/* ----- BOTÓN ----- */
+.send-btn {
+    background: linear-gradient(135deg, #8052ff, #c47cff);
+    border: none;
+    padding: 1.2em 2em;
+    border-radius: 0.8em;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+}
+
+.send-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(128, 82, 255, 0.3);
+}
+
+/* ----- DERECHA (ASTRONAUTA) ----- */
+.right-box {
+    flex: 1;
+    border-radius: 1em;
+    overflow: hidden;
+    background: #0d0e16;
+    border: 1px solid rgba(194, 114, 255, 0);
+    display: flex;
+    flex-direction: column;
+}
+
+.astro-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid rgba(10, 2, 16, 0);
+}
+
+.right-text {
+    padding: 2em;
+    opacity: 0.9;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-text strong {
+    display: block;
+    margin-top: 1em;
+    font-weight: 600;
+    color: #c47cff;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 968px) {
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .outer-box {
+        width: 90%;
+        padding: 2em;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    .left-box, .right-box {
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        margin-top: 2em;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    
+    .outer-box {
+        width: 95%;
+        padding: 1.5em;
+    }
+    
+    .left-box {
+        padding: 2em;
+    }
+    
+    .double {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    .left-box h2 {
+        font-size: 1.8em;
+    }
+    
+    .left-box {
+        padding: 1.5em;
+    }
+    
+    input, textarea {
+        padding: 1em;
+    }
+}

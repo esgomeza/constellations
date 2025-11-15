@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Constellations Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="main-header">
@@ -13,36 +15,43 @@
     <p class="subtitle">Reach out, and let's create a universe of possibilities together!</p>
 </header>
 
-<section class="contact-wrapper">
+<section class="outer-box">
 
-    <!-- IZQUIERDA -->
-    <div class="left-box">
-        <h2>Let’s connect constellations</h2>
-        <p class="desc">
-            Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
-        </p>
+    <div class="contact-wrapper">
 
-        <form class="contact-form">
+        <!-- IZQUIERDA -->
+        <div class="left-box">
+            <h2>Let’s connect constellations</h2>
+            <p class="desc">
+                Let's align our constellations! Reach out and let the magic of collaboration illuminate our skies.
+            </p>
 
-            <div class="double">
-                <input type="text" placeholder="Last Name">
-                <input type="text" placeholder="First Name">
-            </div>
+            <form class="contact-form">
 
-            <input type="email" placeholder="Email">
+                <div class="double">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name">
+                </div>
 
-            <input type="text" placeholder="Phone Number">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <textarea rows="4" placeholder="Message"></textarea>
 
-            <textarea rows="4" placeholder="Message"></textarea>
+                <button class="send-btn">Send it to the moon 🚀</button>
+            </form>
+        </div>
 
-            <button class="send-btn">Send it to the moon 🚀</button>
-        </form>
-    </div>
+        <!-- DERECHA -->
+        <div class="right-box">
+            <img src="./assets/astronauta.png" class="astro-img" alt="astronauta">
 
-    <div class="right-box">
-        <img src="img/astronauta.jpg" alt="astronauta">
-             class="astro-img"
-             alt="astronuat" >
+            <p class="right-text">
+                "Two lunar months revealed Earth’s fragile beauty against vast silence, 
+                transforming my view of our place in the universe."<br>
+                <strong>Irinel Traista</strong>
+            </p>
+        </div>
+
     </div>
 
 </section>
