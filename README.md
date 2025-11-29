@@ -1,3 +1,5 @@
+CODIGOS:192614-ERIK SANTIAGO GOMEZ
+192603 FELIPE NAVARROO 
 # Parcial – Desarrollo Web (HTML + CSS)
 
 Para este parcial, cada estudiante deberá elegir **una** de las dos opciones de diseño y **replicar el formulario únicamente con HTML y CSS**, sin usar frameworks ni JavaScript.
